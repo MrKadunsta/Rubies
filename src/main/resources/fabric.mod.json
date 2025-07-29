@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rubies",
+	"version": "${version}",
+	"name": "rubies",
+	"description": "This is the mod that changes the vanilla item ID of emeralds to rubies. This is for the Emeralds to Rubies resource pack.",
+	"authors": [
+		"lilrollieguy."
+	],
+	"contact": {
+		"homepage": "https://sites.google.com/view/emeralds-to-rubies",
+		"sources": "https://github.com/MrKadunsta/rubies/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/rubies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lilrollieguy.rubies.Rubies"
+		],
+		"fabric-datagen": [
+			"com.lilrollieguy.rubies.RubiesDataGenerator"
+		],
+		"client": [
+			"com.lilrollieguy.rubies.RubiesClient"
+		]
+	},
+	"mixins": [
+		"rubies.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
